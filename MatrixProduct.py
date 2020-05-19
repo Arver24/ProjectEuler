@@ -33,7 +33,7 @@ for i in range(len(preppedData)):
     # //print(data[i] * 2)
 data = [list(map(int, x)) for x in data]  # ! Converts string array into int array
 
-# * Row Products
+# * Horizontal & Vertical Products
 for k in range(0, cols):
     for j in range(3, rows):
         prod1 = data[k][j - 3] * data[k][j - 2] * data[k][j - 1] * data[k][j]
@@ -45,8 +45,8 @@ for k in range(0, cols):
         elif prod2 > maxprod:
             maxprod = prod2
             prod2 = 0
-print(maxprod, prod1, prod2)
-# * column products
+# //print(maxprod, prod1, prod2)
+# * backslash products
 for l in range(3, cols):
     for m in range(3, rows):
         prod1 = (
@@ -62,7 +62,7 @@ for l in range(3, cols):
         elif prod2 > maxprod:
             maxprod = prod2
             prod2 = 0
-# * Diagonal Products
+# * forwardslash Products
 for n in range(cols - 4, 0, -1):
     for o in range(3, rows):
 
@@ -74,23 +74,23 @@ for n in range(cols - 4, 0, -1):
         )
         if prod1 > maxprod:
             maxprod = prod1
-            # maxindex1 = data[k]
+            # //maxindex1 = data[k]
             prod1 = 0
         elif prod2 > maxprod:
             maxprod = prod2
             prod2 = 0
-        # print(prod1, prod2)
-# print(prod1, prod2)
-# for p in range(3, cols):
-#     for q in range(0, rows):
-#         prod = data[m - 3][l] * data[m - 2][l] * data[m - 1][l] * data[m][l]
-#         if prod > maxprod:
-#             maxprod = prod
-#             # maxindex2 = [l, m]
-#             prod = 0
-print(maxprod, prod1, prod2)
-# print(data)
-
+        # //print(prod1, prod2)
+# //print(prod1, prod2)
+# //for p in range(3, cols):
+#     //for q in range(0, rows):
+#         //prod = data[m - 3][l] * data[m - 2][l] * data[m - 1][l] * data[m][l]
+#         //if prod > maxprod:
+#            // maxprod = prod
+#             // maxindex2 = [l, m]
+#             //prod = 0
+# //print(maxprod, prod1, prod2)
+# //print(data)
+print(maxprod)
 # ###
 # 279496 279496
 # 57816 16194745
