@@ -18,6 +18,6 @@ for i in range(1, stop):
         break
 
 
-print(tn, n, i, stop)
-
+# print(tn, n, i, stop)
+print(tn)
 # print(end)
