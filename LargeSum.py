@@ -102,4 +102,5 @@ inlist = list(map(int, inp.split("\n")))
 # for i in range(len(inlist)):
 #     inlist[i] = map(int, inlist[i])
 tot = sum(inlist)
-print(tot)
+num = 10 ** (len(str(tot)) - 10)
+print(int(tot / num))
